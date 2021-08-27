@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
-using WSAlmandTeknologi;
 using static WSAlmandTeknologi.ServiceModels;
 
 namespace WSAlmandTeknologi
@@ -21,7 +16,7 @@ namespace WSAlmandTeknologi
             DB = new dbAlmandTeknologiDataContext();
 
             List<User> Lmvh = new List<User>();
-
+            
             try
             {
                 var AllData = DB.GetUser(UserName, Tipe);

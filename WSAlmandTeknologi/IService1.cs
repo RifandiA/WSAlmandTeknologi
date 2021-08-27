@@ -23,7 +23,7 @@ namespace WSAlmandTeknologi
         [OperationContract]
         [WebInvoke(Method = "GET", UriTemplate = "/GetUser/{UserName}/{Tipe}", BodyStyle = WebMessageBodyStyle.Wrapped,
             RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-
+       
         List<User> GetUser(string UserName, string Tipe);
 
     }
